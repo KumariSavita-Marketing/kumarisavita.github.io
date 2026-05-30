@@ -1,8 +1,8 @@
 /* GLOBAL THEME */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f7f9fc;
-  color: #1a1a1a;
+  font-family: 'Satoshi', sans-serif;
+  background: #121212;
+  color: #e6e6e6;
   max-width: 900px;
   margin: auto;
   padding: 2rem;
@@ -12,7 +12,7 @@ body {
 /* HEADINGS */
 h1, h2, h3 {
   font-weight: 600;
-  color: #0f1c2e;
+  color: #f2f2f2;
 }
 
 /* TOP NAVIGATION BAR */
@@ -21,8 +21,8 @@ h1, h2, h3 {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #dce3ee;
+  background: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
   padding: 0.9rem 1.5rem;
   display: flex;
   gap: 1.5rem;
@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 .top-nav a {
-  color: #0f1c2e;
+  color: #e6e6e6;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -40,7 +40,7 @@ h1, h2, h3 {
 }
 
 .top-nav a:hover {
-  color: #2a6df4;
+  color: #d4b98c;
   transform: translateY(-2px);
 }
 
@@ -50,18 +50,18 @@ h1, h2, h3 {
 
 /* TILE SECTIONS */
 .tile {
-  background: #ffffff;
-  border: 1px solid #e3e8f0;
+  background: #1e1e1e;
+  border: 1px solid #2c2c2c;
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
   transition: 0.25s ease;
 }
 
 .tile:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 /* TAG BUTTONS */
@@ -73,17 +73,17 @@ h1, h2, h3 {
 }
 
 .tag-buttons span {
-  background: #eef3ff;
-  color: #2a6df4;
+  background: #2a2a2a;
+  color: #d4b98c;
   padding: 0.45rem 0.75rem;
   border-radius: 20px;
-  border: 1px solid #d4e0ff;
+  border: 1px solid #3a3a3a;
   font-size: 0.85rem;
   transition: 0.25s ease;
 }
 
 .tag-buttons span:hover {
-  background: #dce7ff;
+  background: #3a3a3a;
   transform: translateY(-2px);
 }
 
@@ -95,8 +95,8 @@ h1, h2, h3 {
 }
 
 .link-buttons a {
-  background: #2a6df4;
-  color: white;
+  background: #d4b98c;
+  color: #121212;
   padding: 0.55rem 1rem;
   border-radius: 6px;
   text-decoration: none;
@@ -105,6 +105,6 @@ h1, h2, h3 {
 }
 
 .link-buttons a:hover {
-  background: #1f54c9;
+  background: #c3a67a;
   transform: translateY(-2px);
 }
