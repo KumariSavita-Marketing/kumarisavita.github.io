@@ -16,13 +16,15 @@ title: " "
 </nav>
 
 <section class="hero" id="home">
-  <div class="hero-eyebrow">Digital Content Marketer</div>
-  <h1 class="hero-name">Kumari Savita</h1>
-  <p class="hero-sub">I build scalable content ecosystems that attract and convert — specialising in SEO, social strategy and organic acquisition for fintech and regulated markets.</p>
-  <div class="hero-links">
-    <a href="mailto:kri.savita30@gmail.com" class="btn-primary">Email me</a>
-    <a href="https://www.linkedin.com/in/kumari-savita-175b34244" target="_blank" class="btn-outline">LinkedIn ↗</a>
-    <a href="https://medium.com/@kri.savita30" target="_blank" class="btn-outline">Blog ↗</a>
+  <div class="hero-body">
+    <div class="hero-eyebrow">Digital Content Marketer</div>
+    <h1 class="hero-name">Kumari Savita</h1>
+    <p class="hero-sub">I build scalable content ecosystems that attract and convert — specialising in SEO, social strategy and organic acquisition for fintech and regulated markets.</p>
+    <div class="hero-links">
+      <a href="mailto:kri.savita30@gmail.com" class="btn-primary">Email me</a>
+      <a href="https://www.linkedin.com/in/kumari-savita-175b34244" target="_blank" class="btn-outline">LinkedIn ↗</a>
+      <a href="https://medium.com/@kri.savita30" target="_blank" class="btn-outline">Blog ↗</a>
+    </div>
   </div>
 </section>
 
@@ -69,7 +71,7 @@ title: " "
   </div>
 </section>
 
-<section class="section section-tinted" id="education">
+<section class="section-tinted" id="education">
   <h2 class="section-title">Education</h2>
   <div class="edu-grid">
     <div class="edu-card">
@@ -128,7 +130,7 @@ title: " "
   </div>
 </section>
 
-<section class="section section-tinted" id="achievements">
+<section class="section-tinted" id="achievements">
   <h2 class="section-title">Achievements</h2>
   <div class="stats-grid">
     <div class="stat-card">
@@ -157,7 +159,7 @@ title: " "
 <section class="section" id="skills">
   <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
-    <div class="skill-tile skill-tile--1">
+    <div class="skill-tile">
       <div class="skill-tile-icon">✍️</div>
       <h4>Content</h4>
       <ul>
@@ -169,7 +171,7 @@ title: " "
         <li>Tone of voice</li>
       </ul>
     </div>
-    <div class="skill-tile skill-tile--2">
+    <div class="skill-tile">
       <div class="skill-tile-icon">🗺️</div>
       <h4>Strategy</h4>
       <ul>
@@ -181,7 +183,7 @@ title: " "
         <li>Brand messaging</li>
       </ul>
     </div>
-    <div class="skill-tile skill-tile--3">
+    <div class="skill-tile">
       <div class="skill-tile-icon">📊</div>
       <h4>Analytics</h4>
       <ul>
@@ -193,7 +195,7 @@ title: " "
         <li>Performance QA</li>
       </ul>
     </div>
-    <div class="skill-tile skill-tile--4">
+    <div class="skill-tile">
       <div class="skill-tile-icon">🛠️</div>
       <h4>Tools</h4>
       <ul>
@@ -205,7 +207,7 @@ title: " "
         <li>Notion</li>
       </ul>
     </div>
-    <div class="skill-tile skill-tile--5">
+    <div class="skill-tile">
       <div class="skill-tile-icon">🤝</div>
       <h4>Collaboration</h4>
       <ul>
@@ -219,7 +221,7 @@ title: " "
   </div>
 </section>
 
-<section class="section section-tinted" id="leadership">
+<section class="section-tinted" id="leadership">
   <h2 class="section-title">Leadership</h2>
   <div class="leadership-list">
     <div class="leadership-item">
