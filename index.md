@@ -1,11 +1,15 @@
+---
+title: " "
+---
 <link rel="stylesheet" href="assets/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <nav class="top-nav">
   <div class="nav-logo">KS</div>
   <div class="nav-links">
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
     <a href="#skills">Skills</a>
     <a href="#contact" class="nav-cta">Let's talk</a>
   </div>
@@ -13,21 +17,17 @@
 
 <section class="hero" id="home">
   <div class="hero-eyebrow">Digital Content Marketer</div>
-  <h1 class="hero-name">Kumari<br>Savita</h1>
+  <h1 class="hero-name">Kumari Savita</h1>
   <p class="hero-sub">I build scalable content ecosystems that attract and convert — specialising in SEO, social strategy and organic acquisition for fintech and regulated markets.</p>
   <div class="hero-links">
     <a href="mailto:kri.savita30@gmail.com" class="btn-primary">Email me</a>
     <a href="https://www.linkedin.com/in/kumari-savita-175b34244" target="_blank" class="btn-outline">LinkedIn ↗</a>
-    <a href="https://medium.com/@kri.savita30" target="_blank" class="btn-outline">Medium ↗</a>
+    <a href="https://medium.com/@kri.savita30" target="_blank" class="btn-outline">Blog ↗</a>
   </div>
-  <div class="hero-scroll-hint">↓ scroll</div>
 </section>
 
 <section class="section" id="experience">
-  <div class="section-header">
-    <span class="section-num">01</span>
-    <h2 class="section-title">Experience</h2>
-  </div>
+  <h2 class="section-title">Experience</h2>
 
   <div class="exp-item">
     <div class="exp-meta">
@@ -70,10 +70,7 @@
 </section>
 
 <section class="section section-tinted" id="education">
-  <div class="section-header">
-    <span class="section-num">02</span>
-    <h2 class="section-title">Education</h2>
-  </div>
+  <h2 class="section-title">Education</h2>
   <div class="edu-grid">
     <div class="edu-card">
       <div class="edu-tag">Masters</div>
@@ -81,23 +78,20 @@
       <div class="edu-school">SOAS University of London</div>
       <div class="edu-meta">Sep 2025 – Sep 2026 · United Kingdom</div>
       <div class="edu-modules">Digital Marketing · Digital Cultures & Communication · Global Digital Media</div>
-      <div class="edu-grade">Distinction — on track</div>
+      <div class="edu-grade">Grade: Distinction (On-track)</div>
     </div>
     <div class="edu-card">
       <div class="edu-tag">Bachelors</div>
       <div class="edu-degree">BA History & Psychology</div>
       <div class="edu-school">University of Delhi</div>
       <div class="edu-meta">Oct 2021 – Jul 2024 · India</div>
-      <div class="edu-grade">2:1</div>
+      <div class="edu-grade">Grade: 2:1</div>
     </div>
   </div>
 </section>
 
 <section class="section" id="projects">
-  <div class="section-header">
-    <span class="section-num">03</span>
-    <h2 class="section-title">Projects</h2>
-  </div>
+  <h2 class="section-title">Projects</h2>
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-num">01</div>
@@ -135,42 +129,36 @@
 </section>
 
 <section class="section section-tinted" id="achievements">
-  <div class="section-header">
-    <span class="section-num">04</span>
-    <h2 class="section-title">Achievements</h2>
-  </div>
+  <h2 class="section-title">Achievements</h2>
   <div class="stats-grid">
     <div class="stat-card">
       <div class="stat-number">400+</div>
-      <div class="stat-label">Content assets</div>
+      <div class="stat-label">Content Assets</div>
       <div class="stat-sub">shipped across roles</div>
     </div>
     <div class="stat-card">
       <div class="stat-number">650K+</div>
-      <div class="stat-label">Audience reach</div>
+      <div class="stat-label">Audience Reach</div>
       <div class="stat-sub">across web + social</div>
     </div>
     <div class="stat-card">
       <div class="stat-number">100%</div>
-      <div class="stat-label">On-time publishing</div>
+      <div class="stat-label">On-Time Publishing</div>
       <div class="stat-sub">accuracy across all roles</div>
     </div>
     <div class="stat-card">
       <div class="stat-number">3.3%</div>
-      <div class="stat-label">Lead-to-conversion rate</div>
+      <div class="stat-label">Lead-to-Conversion</div>
       <div class="stat-sub">from 3K generated leads</div>
     </div>
   </div>
 </section>
 
 <section class="section" id="skills">
-  <div class="section-header">
-    <span class="section-num">05</span>
-    <h2 class="section-title">Skills</h2>
-  </div>
+  <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
     <div class="skill-tile skill-tile--1">
-      <div class="skill-tile-icon">✍</div>
+      <div class="skill-tile-icon">✍️</div>
       <h4>Content</h4>
       <ul>
         <li>SEO writing</li>
@@ -182,7 +170,7 @@
       </ul>
     </div>
     <div class="skill-tile skill-tile--2">
-      <div class="skill-tile-icon">🗺</div>
+      <div class="skill-tile-icon">🗺️</div>
       <h4>Strategy</h4>
       <ul>
         <li>Content operations</li>
@@ -206,7 +194,7 @@
       </ul>
     </div>
     <div class="skill-tile skill-tile--4">
-      <div class="skill-tile-icon">🛠</div>
+      <div class="skill-tile-icon">🛠️</div>
       <h4>Tools</h4>
       <ul>
         <li>HubSpot CMS</li>
@@ -232,10 +220,7 @@
 </section>
 
 <section class="section section-tinted" id="leadership">
-  <div class="section-header">
-    <span class="section-num">06</span>
-    <h2 class="section-title">Leadership</h2>
-  </div>
+  <h2 class="section-title">Leadership</h2>
   <div class="leadership-list">
     <div class="leadership-item">
       <div class="leadership-left">
@@ -272,16 +257,14 @@
 
 <section class="contact-section" id="contact">
   <div class="contact-inner">
-    <h2 class="contact-heading">Let's work<br><em>together.</em></h2>
+    <h2 class="contact-heading">Let's work <em>together.</em></h2>
     <p class="contact-sub">Open to freelance, contract and full-time opportunities in content marketing and digital strategy.</p>
     <div class="contact-links">
       <a href="mailto:kri.savita30@gmail.com" class="btn-primary">kri.savita30@gmail.com</a>
       <a href="https://www.linkedin.com/in/kumari-savita-175b34244" target="_blank" class="btn-outline">LinkedIn ↗</a>
-      <a href="https://medium.com/@kri.savita30" target="_blank" class="btn-outline">Medium ↗</a>
+      <a href="https://medium.com/@kri.savita30" target="_blank" class="btn-outline">Blog ↗</a>
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
-  <span>© 2025 Kumari Savita</span>
-</footer>
+<footer class="site-footer">© 2025 Kumari Savita</footer>
