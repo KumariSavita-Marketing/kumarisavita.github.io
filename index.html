@@ -65,22 +65,24 @@ layout: none
       font-weight: 800;
       color: var(--accent);
       letter-spacing: 0.06em;
+      flex-shrink: 0;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 16px;
     }
 
     .nav-links a {
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.88rem;
       font-weight: 500;
       position: relative;
       padding-bottom: 3px;
       transition: color 0.2s;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .nav-links a::after {
@@ -98,9 +100,10 @@ layout: none
     .nav-cta {
       background: var(--accent) !important;
       color: var(--bg) !important;
-      padding: 0.42rem 1.15rem;
+      padding: 0.38rem 1rem;
       border-radius: 100px;
       font-weight: 700 !important;
+      font-size: 0.85rem !important;
       transition: box-shadow 0.2s !important;
     }
     .nav-cta::after { display: none !important; }
@@ -178,9 +181,7 @@ layout: none
       line-height: 1.65;
       margin-bottom: 1.8rem;
       font-weight: 300;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      overflow: visible;
     }
 
     .hero-specialisms {
@@ -283,59 +284,6 @@ layout: none
       padding-bottom: 0.45rem;
     }
 
-    /* ── EXPERIENCE ── */
-    .exp-item {
-      display: grid;
-      grid-template-columns: 210px 1fr;
-      gap: 2.5rem;
-      padding: 2.2rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .exp-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.06); }
-
-    .exp-date {
-      display: block;
-      font-size: 0.88rem;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-    }
-
-    .exp-location {
-      display: block;
-      font-size: 0.8rem;
-      color: #4e5f73;
-    }
-
-    .exp-content h3 {
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 0.5rem;
-    }
-
-    .exp-co { color: var(--accent); }
-
-    .exp-content p {
-      font-size: 1rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-      line-height: 1.65;
-    }
-
-    /* ── TAGS ── */
-    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
-
-    .tag {
-      font-size: 0.8rem;
-      color: var(--accent);
-      border: 1px solid rgba(0,238,255,0.25);
-      padding: 4px 11px;
-      border-radius: 20px;
-      background: rgba(0,238,255,0.05);
-    }
-
     /* ── EDUCATION ── */
     .edu-grid {
       display: grid;
@@ -394,6 +342,59 @@ layout: none
       margin-top: 0.8rem;
     }
 
+    /* ── EXPERIENCE ── */
+    .exp-item {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 2.5rem;
+      padding: 2.2rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .exp-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.06); }
+
+    .exp-date {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-location {
+      display: block;
+      font-size: 0.8rem;
+      color: #4e5f73;
+    }
+
+    .exp-content h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    .exp-co { color: var(--accent); }
+
+    .exp-content p {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      line-height: 1.65;
+    }
+
+    /* ── TAGS ── */
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; }
+
+    .tag {
+      font-size: 0.8rem;
+      color: var(--accent);
+      border: 1px solid rgba(0,238,255,0.25);
+      padding: 4px 11px;
+      border-radius: 20px;
+      background: rgba(0,238,255,0.05);
+    }
+
     /* ── PROJECTS ── */
     .projects-grid {
       display: grid;
@@ -439,48 +440,50 @@ layout: none
       margin-bottom: 1.1rem;
     }
 
-    /* ── ACHIEVEMENTS ── */
-    .stats-grid {
+    /* ── CERTIFICATES ── */
+    .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
 
-    .stat-card {
+    .cert-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-bottom: 3px solid var(--accent);
+      border-left: 4px solid var(--accent);
       border-radius: var(--radius);
       padding: 1.8rem 2rem;
-      text-align: center;
       transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .stat-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,238,255,0.12);
+    .cert-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,238,255,0.1);
     }
 
-    .stat-num {
-      font-family: var(--font-display);
-      font-size: 2.8rem;
-      font-weight: 800;
+    .cert-issuer {
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
       color: var(--accent);
-      line-height: 1;
-      margin-bottom: 0.4rem;
-      letter-spacing: -0.03em;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      opacity: 0.8;
     }
 
-    .stat-label {
-      font-size: 0.98rem;
+    .cert-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
     }
 
-    .stat-sub {
-      font-size: 0.82rem;
-      color: #4e5f73;
+    .cert-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
     }
 
     /* ── SKILLS ── */
@@ -527,6 +530,50 @@ layout: none
 
     .skill-tile li:hover { box-shadow: 0 0 10px rgba(0,238,255,0.6); }
 
+    /* ── ACHIEVEMENTS ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-bottom: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1.8rem 2rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,238,255,0.12);
+    }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.03em;
+    }
+
+    .stat-label {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-sub {
+      font-size: 0.82rem;
+      color: #4e5f73;
+    }
+
     /* ── LEADERSHIP ── */
     .leadership-item {
       display: grid;
@@ -558,36 +605,86 @@ layout: none
       line-height: 1.65;
     }
 
-    /* ── CONTACT ── */
-    .contact-section {
+    /* ── READ MY WORK ── */
+    .writing-section {
       background: linear-gradient(135deg, #0b1120 0%, #0f1e3a 100%);
       border-top: 1px solid rgba(0,238,255,0.1);
       padding: 90px var(--pad-x);
-      text-align: center;
     }
 
-    .contact-inner { max-width: 580px; margin: 0 auto; }
-
-    .contact-heading {
-      font-family: var(--font-display);
-      font-size: 2.6rem;
-      font-weight: 800;
-      color: #fff;
-      line-height: 1.1;
-      margin-bottom: 1rem;
-      letter-spacing: -0.02em;
+    .writing-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
     }
 
-    .contact-heading em { font-style: italic; color: var(--accent); }
-
-    .contact-sub {
+    .writing-intro {
       font-size: 1.05rem;
       color: #7a90a8;
-      margin-bottom: 2.2rem;
+      margin-bottom: 2.5rem;
       line-height: 1.65;
+      max-width: 600px;
     }
 
-    .contact-links { display: flex; flex-wrap: wrap; gap: 0.85rem; justify-content: center; }
+    .writing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    .writing-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(0,238,255,0.18);
+      border-radius: var(--radius);
+      padding: 2rem 2.2rem;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    .writing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0,238,255,0.12);
+      border-color: rgba(0,238,255,0.4);
+      background: rgba(0,238,255,0.06);
+      text-decoration: none;
+    }
+
+    .writing-source {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      opacity: 0.8;
+    }
+
+    .writing-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.35;
+      margin-bottom: 0.8rem;
+      flex-grow: 1;
+    }
+
+    .writing-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .writing-link-label {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .writing-link-label::after { content: ' ↗'; }
 
     /* ── FOOTER ── */
     .site-footer {
@@ -612,14 +709,20 @@ layout: none
     .hero-links   { animation: fadeUp 0.5s 0.4s ease both; }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 1100px) {
+      .nav-links { gap: 12px; }
+      .nav-links a { font-size: 0.82rem; }
+    }
+
     @media (max-width: 900px) {
       :root { --pad-x: 20px; }
       .hero-name { font-size: 3rem; white-space: normal; }
       .hero-tile { padding: 3rem 2.5rem 2.8rem; }
-      .hero-sub  { white-space: normal; font-size: 1.05rem; }
+      .hero-sub  { font-size: 1.05rem; }
       .exp-item  { grid-template-columns: 1fr; gap: 0.4rem; }
       .edu-grid  { grid-template-columns: 1fr; }
       .leadership-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .writing-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 600px) {
@@ -628,7 +731,7 @@ layout: none
       .hero-tile { padding: 2.2rem 1.6rem 2rem; }
       .hero-name { font-size: 2.2rem; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
-      .contact-section { padding: 60px var(--pad-x); }
+      .writing-section { padding: 60px var(--pad-x); }
     }
   </style>
 </head>
@@ -636,18 +739,22 @@ layout: none
 
 <!-- NAV -->
 <nav class="top-nav">
-  <span class="nav-logo">KS</span>
+  <a href="#home" class="nav-logo" style="text-decoration:none;">KS</a>
   <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#achievements">Achievements</a>
+    <a href="#certificates">Certificates</a>
     <a href="#skills">Skills</a>
-    <a href="#contact" class="nav-cta">Let's talk</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#writing" class="nav-cta">Read My Work</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<div class="hero-wrap">
+<div class="hero-wrap" id="home">
   <div class="hero-tile">
     <span class="hero-eyebrow">Digital Content Marketer</span>
     <h1 class="hero-name">Kumari <span>Savita</span></h1>
@@ -664,52 +771,8 @@ layout: none
   </div>
 </div>
 
-<!-- EXPERIENCE -->
-<section class="section" id="experience">
-  <h2 class="section-title">Experience</h2>
-
-  <div class="exp-item">
-    <div>
-      <span class="exp-date">Dec 2025 — Present</span>
-      <span class="exp-location">Cambridge, UK · Remote</span>
-    </div>
-    <div class="exp-content">
-      <h3><span class="exp-co">Digital Marketing Executive</span> @ Advancement Quest</h3>
-      <p>Delivered SEO-led web content, rebuilt 20+ CMS pages, analysed user behaviour, and improved multi-channel content performance across web and social.</p>
-      <div class="tag-row">
-        <span class="tag">HubSpot CMS</span><span class="tag">GA4</span><span class="tag">GTM</span><span class="tag">LinkedIn</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="exp-item">
-    <div>
-      <span class="exp-date">Nov 2024 — Aug 2025</span>
-      <span class="exp-location">Bengaluru, India</span>
-    </div>
-    <div class="exp-content">
-      <h3><span class="exp-co">Marketing Analyst</span> @ OneAssure – Prost Technologies</h3>
-      <p>Led SEO-driven content and website revamp, produced multi-channel marketing assets, and scaled organic traffic and leads through structured content systems.</p>
-      <div class="tag-row">
-        <span class="tag">Ahrefs</span><span class="tag">SEMrush</span><span class="tag">Looker Studio</span><span class="tag">GA4</span><span class="tag">Search Console</span><span class="tag">Meta Ads</span><span class="tag">Canva</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="exp-item">
-    <div>
-      <span class="exp-date">Jun 2023 — Aug 2023</span>
-      <span class="exp-location">Mumbai, India</span>
-    </div>
-    <div class="exp-content">
-      <h3><span class="exp-co">Intern Journalist</span> @ The Free Press Journal</h3>
-      <p>Delivered 80+ articles with strong research, clear structure and consistent on-time publishing.</p>
-    </div>
-  </div>
-</section>
-
 <!-- EDUCATION -->
-<div class="section-tinted">
+<div class="section-tinted" id="education">
   <div class="section-inner">
     <h2 class="section-title">Education</h2>
     <div class="edu-grid">
@@ -732,134 +795,203 @@ layout: none
   </div>
 </div>
 
-<!-- PROJECTS -->
-<section class="section" id="projects">
-  <h2 class="section-title">Projects</h2>
-  <div class="projects-grid">
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <h2 class="section-title">Experience</h2>
 
-    <div class="project-card">
-      <div class="project-num">01</div>
-      <h3>Podcast</h3>
-      <p>A well-produced podcast showcasing creative scripting, ethical interviewing, digital-tool proficiency and audience-focused storytelling.</p>
+  <div class="exp-item">
+    <div>
+      <span class="exp-date">Dec 2025 – Present</span>
+      <span class="exp-location">Cambridge, UK · Remote</span>
+    </div>
+    <div class="exp-content">
+      <h3><span class="exp-co">Digital Marketing Executive</span> @ Advancement Quest</h3>
+      <p>Delivered SEO-led web content, rebuilt 20+ CMS pages, analysed user behaviour, and improved multi-channel content performance across web and social.</p>
       <div class="tag-row">
-        <span class="tag">Content production</span><span class="tag">Creative direction</span><span class="tag">Audience trust-building</span>
+        <span class="tag">HubSpot CMS</span><span class="tag">GA4</span><span class="tag">GTM</span><span class="tag">LinkedIn</span>
       </div>
     </div>
+  </div>
 
-    <div class="project-card">
-      <div class="project-num">02</div>
-      <h3>Short-Form Consumer Insights</h3>
-      <p>Research on TikTok-style vertical video ecosystems and their impact on creators, algorithms and platform-driven marketing.</p>
+  <div class="exp-item">
+    <div>
+      <span class="exp-date">Nov 2024 – Aug 2025</span>
+      <span class="exp-location">Bengaluru, India</span>
+    </div>
+    <div class="exp-content">
+      <h3><span class="exp-co">Marketing Analyst</span> @ OneAssure – Prost Technologies</h3>
+      <p>Led SEO-driven content and website revamp, produced multi-channel marketing assets, and scaled organic traffic and leads through structured content systems.</p>
       <div class="tag-row">
-        <span class="tag">Algorithm literacy</span><span class="tag">Social-media ecosystems</span><span class="tag">Engagement metrics</span>
+        <span class="tag">Ahrefs</span><span class="tag">SEMrush</span><span class="tag">Looker Studio</span><span class="tag">GA4</span><span class="tag">Search Console</span><span class="tag">Meta Ads</span><span class="tag">Canva</span>
       </div>
     </div>
+  </div>
 
-    <div class="project-card">
-      <div class="project-num">03</div>
-      <h3>Omni-Channel Campaign Strategy</h3>
-      <p>Analysed American Eagle's 2025 Sydney Sweeney campaign and proposed a new inclusive campaign — "Denim for Every Body".</p>
-      <div class="tag-row">
-        <span class="tag">Digital strategy</span><span class="tag">Influencer marketing</span><span class="tag">Conversion optimisation</span>
+  <div class="exp-item">
+    <div>
+      <span class="exp-date">Jun 2023 – Aug 2023</span>
+      <span class="exp-location">Mumbai, India</span>
+    </div>
+    <div class="exp-content">
+      <h3><span class="exp-co">Intern Journalist</span> @ The Free Press Journal</h3>
+      <p>Delivered 80+ articles with strong research, clear structure and consistent on-time publishing.</p>
+      <div class="tag-row" style="margin-top: 0.5rem;">
+        <a href="https://www.freepressjournal.in/author/kumari-savita" class="btn-outline" target="_blank" style="font-size: 0.82rem; padding: 7px 18px;">Author Page ↗</a>
       </div>
     </div>
-
-    <div class="project-card">
-      <div class="project-num">04</div>
-      <h3>Digital Ethnography</h3>
-      <p>Study showing how everyday interactions feed algorithmic profiling, with insights into data flows behind personalised advertising.</p>
-      <div class="tag-row">
-        <span class="tag">Consumer behaviour</span><span class="tag">Audience segmentation</span><span class="tag">Data-driven marketing</span>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
-<div class="section-tinted" id="achievements">
-  <div class="section-inner">
-    <h2 class="section-title">Achievements</h2>
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-num">400+</div>
-        <div class="stat-label">Content Assets</div>
-        <div class="stat-sub">shipped across roles</div>
+<!-- PROJECTS -->
+<div class="section-tinted">
+  <div class="section-inner" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-num">01</div>
+        <h3>Podcast</h3>
+        <p>A well-produced podcast showcasing creative scripting, ethical interviewing, digital-tool proficiency and audience-focused storytelling.</p>
+        <div class="tag-row">
+          <span class="tag">Content production</span><span class="tag">Creative direction</span><span class="tag">Audience trust-building</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">650K+</div>
-        <div class="stat-label">Audience Reach</div>
-        <div class="stat-sub">across web + social</div>
+
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <h3>Short-Form Consumer Insights</h3>
+        <p>Research on TikTok-style vertical video ecosystems and their impact on creators, algorithms and platform-driven marketing.</p>
+        <div class="tag-row">
+          <span class="tag">Algorithm literacy</span><span class="tag">Social-media ecosystems</span><span class="tag">Engagement metrics</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">On-Time Publishing</div>
-        <div class="stat-sub">accuracy across all roles</div>
+
+      <div class="project-card">
+        <div class="project-num">03</div>
+        <h3>Omni-Channel Campaign Strategy</h3>
+        <p>Analysed American Eagle's 2025 Sydney Sweeney campaign and proposed a new inclusive campaign, "Denim for Every Body".</p>
+        <div class="tag-row">
+          <span class="tag">Digital strategy</span><span class="tag">Influencer marketing</span><span class="tag">Conversion optimisation</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">3.3%</div>
-        <div class="stat-label">Lead-to-Conversion</div>
-        <div class="stat-sub">from 3K generated leads</div>
+
+      <div class="project-card">
+        <div class="project-num">04</div>
+        <h3>Digital Ethnography</h3>
+        <p>Study showing how everyday interactions feed algorithmic profiling, with insights into data flows behind personalised advertising.</p>
+        <div class="tag-row">
+          <span class="tag">Consumer behaviour</span><span class="tag">Audience segmentation</span><span class="tag">Data-driven marketing</span>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
 
-<!-- SKILLS -->
-<section class="section" id="skills">
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-grid">
+<!-- CERTIFICATES -->
+<section class="section" id="certificates">
+  <h2 class="section-title">Certificates</h2>
+  <div class="cert-grid">
 
-    <div class="skill-tile">
-      <span class="skill-icon">✍️</span>
-      <h4>Content</h4>
-      <ul>
-        <li>SEO writing</li><li>UX copy</li><li>Web content</li>
-        <li>Blog production</li><li>Social content</li><li>Tone of voice</li>
-      </ul>
+    <div class="cert-card">
+      <div class="cert-issuer">Semrush Academy</div>
+      <div class="cert-title">AI Search Operating System</div>
+      <p class="cert-desc">Covers how AI-driven search works and how to optimise content strategy for visibility in AI-powered search environments.</p>
     </div>
 
-    <div class="skill-tile">
-      <span class="skill-icon">🗺️</span>
-      <h4>Strategy</h4>
-      <ul>
-        <li>Content operations</li><li>Keyword mapping</li><li>Journey design</li>
-        <li>Audience insights</li><li>Competitor research</li><li>Brand messaging</li>
-      </ul>
-    </div>
-
-    <div class="skill-tile">
-      <span class="skill-icon">📊</span>
-      <h4>Analytics</h4>
-      <ul>
-        <li>GA4</li><li>GTM</li><li>Looker Studio</li>
-        <li>CTR analysis</li><li>Engagement metrics</li><li>Performance QA</li>
-      </ul>
-    </div>
-
-    <div class="skill-tile">
-      <span class="skill-icon">🛠️</span>
-      <h4>Tools</h4>
-      <ul>
-        <li>HubSpot CMS</li><li>Ahrefs</li><li>SEMrush</li>
-        <li>Meta Analytics</li><li>YouTube Studio</li><li>Notion</li>
-      </ul>
-    </div>
-
-    <div class="skill-tile">
-      <span class="skill-icon">🤝</span>
-      <h4>Collaboration</h4>
-      <ul>
-        <li>Editorial QA</li><li>Workflow ops</li><li>Cross-team work</li>
-        <li>Creative briefs</li><li>Stakeholder comms</li>
-      </ul>
+    <div class="cert-card">
+      <div class="cert-issuer">Masterclass</div>
+      <div class="cert-title">Masterclass in Fintech</div>
+      <p class="cert-desc">Deep-dive into financial technology concepts, products and market dynamics crucial for content marketing in fintech.</p>
     </div>
 
   </div>
 </section>
 
-<!-- LEADERSHIP -->
+<!-- SKILLS -->
 <div class="section-tinted">
+  <div class="section-inner" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-tile">
+        <span class="skill-icon">✍️</span>
+        <h4>Content</h4>
+        <ul>
+          <li>SEO writing</li><li>UX copy</li><li>Web content</li>
+          <li>Blog production</li><li>Social content</li><li>Tone of voice</li>
+        </ul>
+      </div>
+
+      <div class="skill-tile">
+        <span class="skill-icon">🗺️</span>
+        <h4>Strategy</h4>
+        <ul>
+          <li>Content operations</li><li>Keyword mapping</li><li>Journey design</li>
+          <li>Audience insights</li><li>Competitor research</li><li>Brand messaging</li>
+        </ul>
+      </div>
+
+      <div class="skill-tile">
+        <span class="skill-icon">📊</span>
+        <h4>Analytics</h4>
+        <ul>
+          <li>GA4</li><li>GTM</li><li>Looker Studio</li>
+          <li>CTR analysis</li><li>Engagement metrics</li><li>Performance QA</li>
+        </ul>
+      </div>
+
+      <div class="skill-tile">
+        <span class="skill-icon">🛠️</span>
+        <h4>Tools</h4>
+        <ul>
+          <li>HubSpot CMS</li><li>Ahrefs</li><li>SEMrush</li>
+          <li>Meta Analytics</li><li>YouTube Studio</li><li>Notion</li>
+        </ul>
+      </div>
+
+      <div class="skill-tile">
+        <span class="skill-icon">🤝</span>
+        <h4>Collaboration</h4>
+        <ul>
+          <li>Editorial QA</li><li>Workflow ops</li><li>Cross-team work</li>
+          <li>Creative briefs</li><li>Stakeholder comms</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<section class="section" id="achievements">
+  <h2 class="section-title">Achievements</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-num">400+</div>
+      <div class="stat-label">Content Assets</div>
+      <div class="stat-sub">shipped across roles</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">650K+</div>
+      <div class="stat-label">Audience Reach</div>
+      <div class="stat-sub">across web + social</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">On-Time Publishing</div>
+      <div class="stat-sub">accuracy across all roles</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">3.3%</div>
+      <div class="stat-label">Lead-to-Conversion</div>
+      <div class="stat-sub">from 3K generated leads</div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<div class="section-tinted" id="leadership">
   <div class="section-inner">
     <h2 class="section-title">Leadership</h2>
 
@@ -905,15 +1037,27 @@ layout: none
   </div>
 </div>
 
-<!-- CONTACT -->
-<div class="contact-section" id="contact">
-  <div class="contact-inner">
-    <h2 class="contact-heading">Let's work <em>together.</em></h2>
-    <p class="contact-sub">Open to freelance, contract and full-time opportunities in content marketing and digital strategy.</p>
-    <div class="contact-links">
-      <a href="mailto:kri.savita30@gmail.com" class="btn-primary">kri.savita30@gmail.com</a>
-      <a href="https://www.linkedin.com/in/kumari-savita-175b34244" class="btn-outline" target="_blank">LinkedIn ↗</a>
-      <a href="https://medium.com/@kri.savita30" class="btn-outline" target="_blank">Blog ↗</a>
+<!-- READ MY WORK -->
+<div class="writing-section" id="writing">
+  <div class="writing-inner">
+    <h2 class="section-title">Read My Work</h2>
+    <p class="writing-intro">A selection of published articles spanning fintech, insurance, and digital culture, written for brand blogs and independent platforms.</p>
+    <div class="writing-grid">
+
+      <a href="https://www.oneassure.in/insurance/health-insurance-guides/how-can-blockchain-reshape-future-of-insurance-scope-and-challenges" class="writing-card" target="_blank" rel="noopener">
+        <div class="writing-source">OneAssure · Brand Content</div>
+        <h3>How Blockchain Can Reshape the Future of Insurance: Scope and Challenges</h3>
+        <p>An in-depth explainer on how distributed ledger technology is transforming claims processing, fraud prevention and policy transparency in the insurance sector.</p>
+        <span class="writing-link-label">Read article</span>
+      </a>
+
+      <a href="https://medium.com/@kri.savita30/the-emotional-gap-in-fintech-20327e06b5f9" class="writing-card" target="_blank" rel="noopener">
+        <div class="writing-source">Medium · Personal Essay</div>
+        <h3>The Emotional Gap in Fintech</h3>
+        <p>Why financial technology products are built for efficiency but often miss the emotional complexity of how people actually relate to money, and what that means for UX and content.</p>
+        <span class="writing-link-label">Read on Medium</span>
+      </a>
+
     </div>
   </div>
 </div>
